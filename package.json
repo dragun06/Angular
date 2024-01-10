@@ -6,7 +6,7 @@
   "scripts": {
     "ng": "ng",
     "start": "cd .. && npm install && node server.js",
-    "build": "cd assignment-app && npm install && npm build",
+    "build": "cd assignment-app && npm install && ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   }
