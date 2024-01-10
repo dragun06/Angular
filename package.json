@@ -5,8 +5,8 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "node server.js",
-    "build": "npm install && ng build",
+    "start": "cd .. && npm install && node server.js",
+    "build": "cd assignment-app && npm install && ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   }
