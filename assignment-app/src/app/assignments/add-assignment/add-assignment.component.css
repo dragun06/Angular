@@ -1,0 +1,24 @@
+.form {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+mat-hint {
+  font-size: 12px;
+  color: #777;
+}
+
+button {
+  margin-top: 10px;
+  width: 100%;
+}

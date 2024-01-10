@@ -1,0 +1,14 @@
+<mat-card *ngIf="assignmentTransmis">
+  <mat-card-content class="assignment-detail">
+    <mat-card-title>
+      {{ assignmentTransmis.nom }}
+    </mat-card-title>
+    <mat-card-subtitle>
+      {{assignmentTransmis.dateDeRendu | date: 'dd/MM/yyyy'}}
+    </mat-card-subtitle>
+    <nav>
+        <button mat-stroked-button color="primary" (click)="onEditAssignment()" [disabled]="!isAdmin()">Edit</button>
+    </nav>
+    <button mat-raised-button color="warn" (click)="onDeleteAssignment()" [disabled]="!isAdmin()">DELETE</button>
+  </mat-card-content>
+</mat-card>

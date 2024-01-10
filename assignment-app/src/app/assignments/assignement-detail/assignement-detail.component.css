@@ -1,0 +1,33 @@
+/* Style pour la mat-card */
+mat-card {
+  position: absolute;
+  right: 40%;
+  left: 40%;
+  max-width: 400px; /* Ajustez la largeur maximale selon vos besoins */
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
+}
+
+/* Style pour le contenu de la mat-card */
+.assignment-detail {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+mat-card-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+mat-card-subtitle {
+  color: #555;
+}
+
+/* Style pour le bouton DELETE */
+button {
+  margin: 10px 0;
+}
+

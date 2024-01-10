@@ -1,0 +1,36 @@
+table tr td {
+  border: 1px solid black;
+}
+
+.rendu {
+  color:greenyellow;
+}
+
+.nonRendu {
+  color:red;
+  border:2px dashed red;
+  background-color:yellow;
+}
+
+.form {
+  display:flex;
+  flex-direction: column;
+  margin:5px;
+}
+
+.devoir-list a {
+  cursor: pointer;
+}
+
+.btnAjout {
+  margin: 20px 0;
+}
+
+.btnAjout button {
+  background-color: #3399ff;
+}
+
+.btnAjout a {
+  text-decoration: none;
+  color: white;
+}
