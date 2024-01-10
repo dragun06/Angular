@@ -1,7 +1,7 @@
 let express = require('express');
 let app = express();
 let bodyParser = require('body-parser');
-let assignment = require('./routes/assignments');
+let assignment = require('../assignment-app/routes/assignments');
 
 let mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
@@ -12,8 +12,7 @@ const uri = 'mongodb+srv://dragun:O57rTKa9qrdY9vRU@cluster0.fkz4ff2.mongodb.net/
 
 const options = {
   useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useFindAndModify:false
+  useUnifiedTopology: true
 };
 
 mongoose.connect(uri, options)
