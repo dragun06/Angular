@@ -55,7 +55,7 @@ app.route(prefix + '/assignments')
   .put(assignment.updateAssignment);
 
 // On démarre le serveur
-app.listen(port, "0.0.0.0");
+app.listen(port, "3.75.158.163");
 console.log('Serveur démarré sur http://localhost:' + port);
 
 module.exports = app;
