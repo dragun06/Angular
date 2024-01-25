@@ -4,6 +4,7 @@ import { AssignmentsService } from '../shared/assignments.service';
 import { ActivatedRoute } from '@angular/router';
 import { AuthService } from '../shared/auth.service';
 import { Router } from '@angular/router';
+import {MatCheckboxChange} from "@angular/material/checkbox";
 
 @Component({
   selector: 'app-assignments',
@@ -19,6 +20,7 @@ export class AssignmentsComponent implements OnInit {
   prevPage!:number;
   hasPrevPage!:boolean;
   hasNextPage!:boolean;
+  onlyRendu!:boolean;
 
   titre = "Formulaire d'ajout de devoir";
   color = 'green';
@@ -46,9 +48,15 @@ export class AssignmentsComponent implements OnInit {
         this.prevPage = data.prevPage;
         this.hasPrevPage = data.hasPrevPage;
         this.hasNextPage = data.hasNextPage;
+        this.onlyRendu = false;
         console.log(data);
       }
     );
+  }
+
+  onChange(ob: MatCheckboxChange) {
+    this.onlyRendu = ob.checked;
+    console.log(this.onlyRendu)
   }
 
   getAssignments() {

@@ -3,6 +3,7 @@
 </app-add-assignment-->
 
 <main class="container">
+  <mat-checkbox (change)="onChange($event)" [checked]="onlyRendu"> Rendu seulement</mat-checkbox>
   <div class="btnAjout">
     <button mat-flat-button [disabled]="!isLogged()" class="btnAjout">
       <a routerLink="/add">
@@ -18,14 +19,16 @@
   <h3>Liste des devoirs :</h3>
 
   <mat-list class="devoir-list" *ngFor="let a of assignments">
-    <nav><a (click)="clickDetail(a.id)">
-      <h3 mat-subheader>{{ a.dateDeRendu | date }}</h3>
-      <mat-list-item (click)="assignmentClique(a)">
-        <p *ngIf="a.rendu" appRendu>{{ a.nom }} a été RENDU.</p>
-        <p *ngIf="!a.rendu" appNonRendu>{{ a.nom }}, N'A PAS ETE RENDU.</p>
-        <mat-divider></mat-divider>
-      </mat-list-item>
-    </a></nav>
+    <ng-container *ngIf="!(onlyRendu && !a.rendu)">
+      <nav><a (click)="clickDetail(a.id)">
+        <h3 mat-subheader>{{ a.dateDeRendu | date }}</h3>
+        <mat-list-item (click)="assignmentClique(a)">
+          <p *ngIf="a.rendu" appRendu>{{ a.nom }} a été RENDU.</p>
+          <p *ngIf="!a.rendu" appNonRendu>{{ a.nom }}, N'A PAS ETE RENDU.</p>
+          <mat-divider></mat-divider>
+        </mat-list-item>
+      </a></nav>
+    </ng-container>
   </mat-list>
 
   <!--app-assignment-detail
