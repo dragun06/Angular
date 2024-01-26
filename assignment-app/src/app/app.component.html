@@ -3,7 +3,10 @@
 
     <button mat-button (click)="opened=!opened"><mat-icon>menu</mat-icon></button>
     <button mat-button routerLink="/home"><mat-icon>home</mat-icon>{{title}}</button>
-    <button routerLink="/login" mat-raised-button color="primary">Login<mat-icon>login</mat-icon></button>
+    <button *ngIf="!authService.loggedIn; else showLogout" routerLink="/login" mat-raised-button color="primary">Login<mat-icon>login</mat-icon></button>
+    <ng-template #showLogout>
+      <button (click)="logout()" mat-raised-button color="primary">Déconnecter<mat-icon>logout</mat-icon></button>
+    </ng-template>
   </mat-toolbar-row>
 </mat-toolbar>
 

@@ -12,8 +12,12 @@ export class AppComponent {
   opened = false
 
   constructor (
-    private authService: AuthService,
+    public authService: AuthService,
     private router: Router) { }
+
+  logout() {
+    this.authService.logOut();
+  }
 
     addAssignment() {
     if (this.authService.loggedIn) {

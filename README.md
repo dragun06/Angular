@@ -23,17 +23,18 @@ Login: test, Password: test, Role, User Login: admin, Password: admin, Role, Adm
 - Ajouter checkbox filtre devoir rendu
 - Ajouter aux assignments : auteur, matiere (+photo matiere), note, remarques
 - afficher les assignments dans une table angular material
+- Bouton trier par date, matiere et note
+- Faire la pagination
 
 
 # Valeurs ajoutées
 - Case rouge ou vert en fonction d'un assignement rendu ou non
 - Notes supérieurs à 15 en gras
 - Les devoirs non rendu n'ont pas de notes
+- Pagination à choix (nombre d'assignment par page)
 
 
-# A faire : 
-- Bouton trier par date, matiere et note
+# A faire :
 - Quand login, mettre un bouton de deconnexion a la place
-- Faire la pagination
 - Vu en détail qui montre les remarques, note si rendu, photo prof et matiere
 - Plus jolie
