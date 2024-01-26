@@ -5,6 +5,7 @@ import { ActivatedRoute } from '@angular/router';
 import { AuthService } from '../shared/auth.service';
 import { Router } from '@angular/router';
 import {MatCheckboxChange} from "@angular/material/checkbox";
+import {bdInitialAssignments} from "../shared/data";
 
 @Component({
   selector: 'app-assignments',
@@ -21,6 +22,9009 @@ export class AssignmentsComponent implements OnInit {
   hasPrevPage!:boolean;
   hasNextPage!:boolean;
   onlyRendu!:boolean;
+  displayedColumns: string[] = [ 'nom', 'matiere', 'rendu',    'note', 'remarque', 'image', 'dateDeRendu'];
+  filteredAssignments: ({
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  } | {
+    note: number;
+    image: string;
+    rendu: boolean;
+    id: number;
+    dateDeRendu: string;
+    nom: string;
+    matiere: string;
+    remarque: string
+  })[] = [];
+
 
   titre = "Formulaire d'ajout de devoir";
   color = 'green';
@@ -58,6 +9062,7 @@ export class AssignmentsComponent implements OnInit {
     this.onlyRendu = ob.checked;
     console.log(this.onlyRendu)
   }
+
 
   getAssignments() {
     this.assignmentService.getAssignments().subscribe(assignments => this.assignments = assignments);
@@ -115,4 +9120,6 @@ export class AssignmentsComponent implements OnInit {
     });
     window.location.reload();
   }
+
+  protected readonly bdInitialAssignments = bdInitialAssignments;
 }

@@ -2,15 +2,24 @@ table tr td {
   border: 1px solid black;
 }
 
-.rendu {
-  color:greenyellow;
+.rendu-true {
+  background-color: green;
 }
 
-.nonRendu {
-  color:red;
-  border:2px dashed red;
-  background-color:yellow;
+.rendu-false {
+  background-color: red;
 }
+
+.style-tab {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+
 
 .form {
   display:flex;

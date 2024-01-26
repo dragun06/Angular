@@ -10,30 +10,11 @@ import { bdInitialAssignments } from './data';
   providedIn: 'root'
 })
 export class AssignmentsService {
-  assignments:Assignment[] = [
-    {
-      id: 1,
-      nom: 'Devoir Angular de Buffa',
-      dateDeRendu: new Date('2023-09-30'),
-      rendu: false,
-    },
-    {
-      id: 2,
-      nom: 'Devoir SQL de Mopolo',
-      dateDeRendu: new Date('2023-10-30'),
-      rendu: false,
-    },
-    {
-      id: 3,
-      nom: 'Devoir gestion de Tunsi',
-      dateDeRendu: new Date('2023-08-30'),
-      rendu: true,
-    },
-  ];
   constructor (private loggingService:LoggingService,
                private http:HttpClient) {}
 
   url = "http://localhost:8010/api/assignments"
+
   getAssignments():Observable<Assignment[]> {
     //return of(this.assignments);
     return this.http.get<Assignment[]>(this.url);
@@ -87,9 +68,12 @@ export class AssignmentsService {
 
     bdInitialAssignments.forEach(a => {
       const nouvelAssignment = new Assignment();
-      nouvelAssignment.nom = a.nom;
       nouvelAssignment.dateDeRendu = new Date(a.dateDeRendu);
       nouvelAssignment.rendu = a.rendu;
+      nouvelAssignment.note = a.note;
+      nouvelAssignment.matiere = a.matiere;
+      nouvelAssignment.remarque = a.remarque;
+      nouvelAssignment.image = a.image;
       appelsVersAddAssignment.push(this.addAssignment(nouvelAssignment))
     });
     return forkJoin(appelsVersAddAssignment);
@@ -98,4 +82,8 @@ export class AssignmentsService {
   getAssignmentsPagine(page:number, limit:number):Observable<any> {
     return this.http.get(this.url + "?page=" + page + "&limit=" + limit);
   }
+
+
+
+
 }
