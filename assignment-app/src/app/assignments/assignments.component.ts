@@ -68,10 +68,41 @@ export class AssignmentsComponent implements OnInit {
         assignment.nom.toLowerCase().includes(this.searchTerm.toLowerCase())
       );
     } else {
-      this.filteredAssignments = this.assignments;
+      this.filteredAssignments = [...this.assignments]; // Copy the sorted assignments
     }
   }
+
   search() {
+    this.filterAssignments();
+  }
+
+  sortAssignmentsByMatiere() {
+    this.assignments.sort((a, b) => a.matiere.localeCompare(b.matiere, 'fr', {sensitivity: 'base'}));
+    this.filterAssignments();
+  }
+
+  sortAssignmentsByNote() {
+    this.assignments.sort((a, b) => {
+      const noteA = Number(a.note);
+      const noteB = Number(b.note);
+      if (a.rendu === b.rendu) {
+        if (noteA > noteB) return -1;
+        if (noteA < noteB) return 1;
+        return 0;
+      }
+      return a.rendu ? -1 : 1;
+    });
+    this.filterAssignments();
+  }
+
+  sortAssignmentsByDateDeRendu() {
+    this.assignments.sort((a, b) => {
+      const dateA = new Date(a.dateDeRendu);
+      const dateB = new Date(b.dateDeRendu);
+      if (dateA < dateB) return 1;
+      if (dateA > dateB) return -1;
+      return 0;
+    });
     this.filterAssignments();
   }
 

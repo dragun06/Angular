@@ -15,6 +15,10 @@
   <input [(ngModel)]="searchTerm" placeholder="Chercher par nom">
   <button (click)="search()">Search</button>
 
+  <button (click)="sortAssignmentsByMatiere()">Trier par matière</button>
+  <button (click)="sortAssignmentsByNote()">Trier par note</button>
+  <button (click)="sortAssignmentsByDateDeRendu()">Trier par date de rendu</button>
+
   <table mat-table [dataSource]="filteredAssignments" class="devoir-list">
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns; when: displayRow"></tr>
