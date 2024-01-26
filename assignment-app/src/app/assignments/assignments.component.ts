@@ -114,6 +114,7 @@ export class AssignmentsComponent implements OnInit {
     this.assignmentService.getAssignmentsPagine(this.page, this.limit).subscribe(
       data => {
         this.assignments = data.docs;
+        this.filteredAssignments = [...this.assignments]; // Add this line
         this.totalDocs = data.totalDocs;
         this.totalPages = data.totalPages;
         this.nextPage = data.nextPage;
