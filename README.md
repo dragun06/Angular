@@ -26,6 +26,7 @@ Login: test, Password: test, Role, User Login: admin, Password: admin, Role, Adm
 - Bouton trier par date, matiere et note
 - Faire la pagination
 - Quand login, mettre un bouton de deconnexion a la place
+- aller sur la 1ere et derniere page (permet de voir les assignments ajoutés)
 
 
 # Valeurs ajoutées

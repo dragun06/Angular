@@ -67,6 +67,12 @@
   <mat-paginator [length]="totalDocs"
                  [pageSize]="limit"
                  [pageSizeOptions]="[5, 10, 20]"
-                 (page)="pageEvent($event)">
+                 (page)="pageEvent($event)"
+                 #paginator>
   </mat-paginator>
+
+  <div class="paginator-buttons">
+    <button mat-button (click)="paginator.firstPage()" class="first-page-button">Aller à la première page</button>
+    <button mat-button (click)="paginator.lastPage()" class="last-page-button">Aller à la dernière page</button>
+  </div>
 </main>
