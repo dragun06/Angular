@@ -12,7 +12,10 @@
     </button>
   </div>
 
-  <table mat-table [dataSource]="assignments" class="devoir-list">
+  <input [(ngModel)]="searchTerm" placeholder="Chercher par nom">
+  <button (click)="search()">Search</button>
+
+  <table mat-table [dataSource]="filteredAssignments" class="devoir-list">
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns; when: displayRow"></tr>
     <!-- Colomn def -->
@@ -57,4 +60,9 @@
         </ng-container>
 
   </table>
+  <mat-paginator [length]="totalDocs"
+                 [pageSize]="limit"
+                 [pageSizeOptions]="[5, 10, 20]"
+                 (page)="pageEvent($event)">
+  </mat-paginator>
 </main>

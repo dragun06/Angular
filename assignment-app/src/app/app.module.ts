@@ -28,6 +28,7 @@ import { AuthGuard } from './shared/auth.guard';
 import { LoginAppComponent } from './assignments/login-app/login-app.component';
 import { HttpClientModule } from '@angular/common/http';
 import {MatTableModule} from "@angular/material/table";
+import {MatPaginatorModule} from "@angular/material/paginator";
 
 const routes : Routes = [
 {path:'', component:AssignmentsComponent},
@@ -70,7 +71,8 @@ const routes : Routes = [
         MatSlideToggleModule,
         HttpClientModule,
         RouterModule.forRoot(routes),
-        MatTableModule
+        MatTableModule,
+        MatPaginatorModule
     ],
   providers: [],
   bootstrap: [AppComponent]

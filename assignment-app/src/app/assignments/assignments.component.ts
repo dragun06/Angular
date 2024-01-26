@@ -6,6 +6,7 @@ import { AuthService } from '../shared/auth.service';
 import { Router } from '@angular/router';
 import {MatCheckboxChange} from "@angular/material/checkbox";
 import {bdInitialAssignments} from "../shared/data";
+import {PageEvent} from "@angular/material/paginator";
 
 @Component({
   selector: 'app-assignments',
@@ -23,7 +24,8 @@ export class AssignmentsComponent implements OnInit {
   hasNextPage!:boolean;
   onlyRendu!:boolean;
   displayedColumns: string[] = [ 'nom', 'matiere', 'rendu',    'note', 'remarque', 'image', 'dateDeRendu'];
-
+  searchTerm: string = '';
+  filteredAssignments: Assignment[] = [];
 
 
   titre = "Formulaire d'ajout de devoir";
@@ -55,10 +57,44 @@ export class AssignmentsComponent implements OnInit {
         this.onlyRendu = false;
         console.log("Donnees recu");
         console.log(data);
+        this.filterAssignments();
       }
     );
   }
 
+  filterAssignments() {
+    if (this.searchTerm) {
+      this.filteredAssignments = this.assignments.filter(assignment =>
+        assignment.nom.toLowerCase().includes(this.searchTerm.toLowerCase())
+      );
+    } else {
+      this.filteredAssignments = this.assignments;
+    }
+  }
+  search() {
+    this.filterAssignments();
+  }
+
+
+  pageEvent(event: PageEvent) {
+    this.page = event.pageIndex + 1;
+    this.limit = event.pageSize;
+
+    this.assignmentService.getAssignmentsPagine(this.page, this.limit).subscribe(
+      data => {
+        this.assignments = data.docs;
+        this.totalDocs = data.totalDocs;
+        this.totalPages = data.totalPages;
+        this.nextPage = data.nextPage;
+        this.prevPage = data.prevPage;
+        this.hasPrevPage = data.hasPrevPage;
+        this.hasNextPage = data.hasNextPage;
+        this.onlyRendu = false;
+        console.log("Donnees recu");
+        console.log(data);
+      }
+    );
+  }
 
   onChange(ob: MatCheckboxChange) {
     this.onlyRendu = ob.checked;
