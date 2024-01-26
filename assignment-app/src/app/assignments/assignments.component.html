@@ -21,7 +21,7 @@
 
   <table mat-table [dataSource]="filteredAssignments" class="devoir-list">
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns; when: displayRow"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns; when: displayRow" class="assignment"></tr>
     <!-- Colomn def -->
         <ng-container matColumnDef="nom" >
           <th mat-header-cell *matHeaderCellDef class="style-tab">Nom</th>

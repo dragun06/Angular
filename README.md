@@ -25,6 +25,7 @@ Login: test, Password: test, Role, User Login: admin, Password: admin, Role, Adm
 - afficher les assignments dans une table angular material
 - Bouton trier par date, matiere et note
 - Faire la pagination
+- Quand login, mettre un bouton de deconnexion a la place
 
 
 # Valeurs ajoutées
@@ -32,9 +33,11 @@ Login: test, Password: test, Role, User Login: admin, Password: admin, Role, Adm
 - Notes supérieurs à 15 en gras
 - Les devoirs non rendu n'ont pas de notes
 - Pagination à choix (nombre d'assignment par page)
+- Assignment apparaissent en fade in 
+- Mettre la souris sur un assignment ou des boutons change la couleur et fait un effet de zoom
 
 
 # A faire :
-- Quand login, mettre un bouton de deconnexion a la place
 - Vu en détail qui montre les remarques, note si rendu, photo prof et matiere
 - Plus jolie
+- réparer ajout, suppression et modification
