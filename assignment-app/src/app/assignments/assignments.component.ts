@@ -135,7 +135,16 @@ export class AssignmentsComponent implements OnInit {
 
 
   getAssignments() {
-    this.assignmentService.getAssignments().subscribe(assignments => this.assignments = assignments);
+    this.assignmentService.getAssignments()
+      .subscribe(
+        assignments => {
+          this.assignments = assignments;
+          console.log('Assignments received from server: ', this.assignments);
+        },
+        error => {
+          console.log('Error while fetching assignments: ', error);
+        }
+      );
   }
 
 

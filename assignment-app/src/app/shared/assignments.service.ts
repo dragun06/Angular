@@ -49,6 +49,8 @@ export class AssignmentsService {
     /*this.assignments.push(assignment);
     this.loggingService.log(assignment.nom, 'Ajouté')
     return of('assignement ajouté')*/
+    console.log("assignment recu de la fonction")
+    console.log(assignment)
     return this.http.post<Assignment>(this.url, assignment);
   }
 

@@ -41,4 +41,4 @@ Login: test, Password: test, Role, User Login: admin, Password: admin, Role, Adm
 # A faire :
 - Vu en détail qui montre les remarques, note si rendu, photo prof et matiere
 - Plus jolie
-- réparer ajout, suppression et modification
+- réparer  suppression et modification

@@ -12,6 +12,11 @@ export class AddAssignmentComponent {
   //@Output() nouvelAssignment = new EventEmitter<Assignment>();
   nomDevoir=""
   dateDeRendu?:Date=undefined;
+  matiere!:string
+  image!: string
+
+
+
 
   constructor (private assignmentsService:AssignmentsService,
                private router:Router) {}
@@ -22,11 +27,22 @@ export class AddAssignmentComponent {
     newAssignment.nom = this.nomDevoir;
     newAssignment.dateDeRendu = new Date(this.dateDeRendu!);
     newAssignment.rendu = false;
-
+    newAssignment.image = this.image;
+    newAssignment.matiere = this.matiere;
+    console.log("assignment envoyé au serveur")
     console.log(newAssignment);
-    //this.assignments.push(newAssignment);
-    //this.nouvelAssignment.emit(newAssignment);
-    this.assignmentsService.addAssignment(newAssignment).subscribe(message =>console.log(message));
+    this.assignmentsService.addAssignment(newAssignment)
+      .subscribe(
+        response => {
+          console.log("réponse du serveur")
+          console.log(response);
+          console.log("réponse du serveur")
+          this.router.navigate(["/home"]);
+        },
+        error => {
+          console.log('Erreur lors de l\'ajout de l\'assignment : ', error);
+        }
+      );
     this.router.navigate(["/home"])
   }
 }
