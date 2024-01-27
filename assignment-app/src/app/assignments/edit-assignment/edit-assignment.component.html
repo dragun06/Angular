@@ -3,7 +3,19 @@
   <h1>Edition de l'assignment {{assignment.nom}}</h1>
   <form ngForm class="form" #formupdate (submit)="onSaveAssignment(); formupdate.reset();">
     <mat-form-field>
-      <input matInput placeholder="Edition du nom" [(ngModel)]="nomAssignment" name="assignment-name">
+      <input matInput placeholder="Nom" [(ngModel)]="nomAssignment" name="assignment-name">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Matière" [(ngModel)]="matiere" name="assignment-matiere">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="number" placeholder="Ajouter une note" [(ngModel)]="note" name="assignment-note">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="text" placeholder="Ajouter une remarque" [(ngModel)]="remarque" name="assignment-remarque">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="URL image matière" [(ngModel)]="image" name="assignment-image">
     </mat-form-field>
     <mat-form-field>
       <input matInput [matDatepicker]="picker" placeholder="Edition de la date" [(ngModel)]="dateDeRendu" name="date">

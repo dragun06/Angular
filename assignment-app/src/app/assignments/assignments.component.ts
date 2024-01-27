@@ -106,6 +106,9 @@ export class AssignmentsComponent implements OnInit {
     this.filterAssignments();
   }
 
+  onRowClicked(row: Assignment) {
+    this.router.navigate(['/assignment', row.id, 'edit']);
+  }
 
   pageEvent(event: PageEvent) {
     this.page = event.pageIndex + 1;

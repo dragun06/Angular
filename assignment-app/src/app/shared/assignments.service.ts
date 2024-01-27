@@ -25,7 +25,6 @@ export class AssignmentsService {
     //return of(a);
     return this.http.get<Assignment>(this.url + "/" + id).pipe(
       map(a=> {
-      a.nom += " transformé avec un pipe";
       return a;
       }),
       tap(_ => {
