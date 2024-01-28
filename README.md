@@ -3,6 +3,10 @@
 
 ### LAFAIRE Dylan, QUATELA Nicolas, ROCAMORA Enzo
 
+Lien de la vidéo de présentation : https://www.youtube.com/watch?v=d4WjAn6gii0
+
+
+
 Commandes pour run le projet :
 
 npm i
@@ -21,14 +25,13 @@ Login: admin, Password: admin
 
 # Tâches faites : 
 - TP 1 à 6
-- Plus de 1000 assignments
-- Ajouter checkbox filtre devoir rendu
+- Plus de 2000 assignments
 - Ajouter aux assignments : auteur, matiere (+photo matiere), note, remarques
 - afficher les assignments dans une table angular material
 - Bouton trier par date, matiere et note
 - Faire la pagination
 - Quand login, mettre un bouton de deconnexion a la place
-- aller sur la 1ere et derniere page (permet de voir les assignments ajoutés)
+- aller sur la 1ere et derniere page 
 - ajouter, edit assignment, supprimer, vue en détail
 - Liste de matiere a choisir pour ajouter un assignment
 
