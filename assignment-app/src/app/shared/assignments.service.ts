@@ -13,17 +13,17 @@ export class AssignmentsService {
   constructor (private loggingService:LoggingService,
                private http:HttpClient) {}
 
-  url = "http://localhost:8010/api/assignments"
+  url = "https://gestion-de-devoir.onrender.com"
 
   getAssignments():Observable<Assignment[]> {
     //return of(this.assignments);
-    return this.http.get<Assignment[]>(this.url);
+    return this.http.get<Assignment[]>(this.url + '/api/assignments');
   }
 
   getAssignment(id:number):Observable<Assignment> {
    // const a:Assignment|undefined = this.assignments.find(a => a.id === id)
     //return of(a);
-    return this.http.get<Assignment>(this.url + "/" + id).pipe(
+    return this.http.get<Assignment>(this.url + '/api/assignments' + "/" + id).pipe(
       map(a=> {
       return a;
       }),
@@ -50,7 +50,7 @@ export class AssignmentsService {
     return of('assignement ajouté')*/
     console.log("assignment recu de la fonction")
     console.log(assignment)
-    return this.http.post<Assignment>(this.url, assignment);
+    return this.http.post<Assignment>(this.url + '/api/assignments', assignment);
   }
 
 
@@ -58,14 +58,14 @@ export class AssignmentsService {
     //return of('assignement modifié')
     console.log("assignment recu l'update")
     console.log(assignment)
-    return this.http.put<Assignment>(this.url, assignment);
+    return this.http.put<Assignment>(this.url + '/api/assignments', assignment);
   }
 
   deleteAssignment(assignment: Assignment): Observable<any> {
     /*¨const pos = this.assignments.indexOf(assignment);
     this.assignments.splice(pos, 1);
     return of("Assignment supprimé")*/
-    let deleteURI = this.url + '/' + assignment._id;
+    let deleteURI = this.url + '/api/assignments' + '/' + assignment._id;
     return this.http.delete(deleteURI);
   }
 
@@ -86,7 +86,7 @@ export class AssignmentsService {
   }
 
   getAssignmentsPagine(page:number, limit:number):Observable<any> {
-    return this.http.get(this.url + "?page=" + page + "&limit=" + limit);
+    return this.http.get(this.url + '/api/assignments' + "?page=" + page + "&limit=" + limit);
   }
 
 
