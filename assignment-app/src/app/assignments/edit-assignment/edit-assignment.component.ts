@@ -54,6 +54,9 @@ export class EditAssignmentComponent implements OnInit {
       this.assignment.note = this.note;
       this.assignment.remarque = this.remarque;
       this.assignment.image = this.image;
+      console.log("assignment envoyé au serveur")
+      console.log(this.assignment);
+      console.log()
       this.assignmentService.updateAssignment(this.assignment).subscribe((message) => {
         console.log(message);
         this.router.navigate(['/home'])
