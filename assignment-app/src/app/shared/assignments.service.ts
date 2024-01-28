@@ -13,7 +13,7 @@ export class AssignmentsService {
   constructor (private loggingService:LoggingService,
                private http:HttpClient) {}
 
-  url = "https://gestion-de-devoir.onrender.com"
+  url = "https://bdd-gestion-de-devoir.onrender.com"
 
   getAssignments():Observable<Assignment[]> {
     //return of(this.assignments);
