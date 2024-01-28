@@ -7,16 +7,13 @@ Lien de la vidéo de présentation : https://www.youtube.com/watch?v=d4WjAn6gii0
 
 Lien du site web : https://gestion-de-devoir.onrender.com/home
 
-Commandes pour run le projet :
+Commandes pour run le projet en local:
 
-npm i
+cd api && npm run build && npm run start 
 
-npm run build
+cd assignment-app && npm run build && npm run start 
 
 (sur deux terminaux différents)
-
-npm run start 
-
 
 Info Login
 
@@ -34,6 +31,7 @@ Login: admin, Password: admin
 - aller sur la 1ere et derniere page 
 - ajouter, edit assignment, supprimer, vue en détail
 - Liste de matiere a choisir pour ajouter un assignment
+- Mettre le projet en ligne sur render.com
 
 
 
