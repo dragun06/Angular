@@ -52,7 +52,6 @@ function postAssignment(req, res){
             res.send('cant post assignment ', err);
         }
         res.json({ message: assignment})
-        res.json({ message: `${assignment.nom} saved! test :!!!!!`})
     })
 }
 

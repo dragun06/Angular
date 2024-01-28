@@ -3,21 +3,31 @@
 </app-add-assignment-->
 
 <main class="container">
-  <mat-checkbox (change)="onChange($event)" [checked]="onlyRendu"> Rendu seulement</mat-checkbox>
-  <div class="btnAjout">
-    <button mat-flat-button [disabled]="!isLogged()" class="btnAjout">
-      <a routerLink="/add">
-          Ajouter Devoir
-      </a>
-    </button>
+  <div class="button-container">
+    <div class="button-container">
+      <div class="add-assignment">
+        <button mat-flat-button [disabled]="!isLogged()" [style.background-color]="isLogged() ? 'blue' : 'gray'" class="btnAjout mat-elevation-z4">
+          <a routerLink="/add">
+            Ajouter Devoir
+          </a>
+        </button>
+        <div *ngIf="!isLogged()" class="error-message">
+          Vous devez être administrateur pour ajouter un devoir.
+        </div>
+      </div>
+      </div>
+    </div>
+
+  <div class="button-container">
+    <input [(ngModel)]="searchTerm" placeholder="Chercher par nom">
+    <button mat-raised-button color="primary" (click)="search()">Search</button>
   </div>
 
-  <input [(ngModel)]="searchTerm" placeholder="Chercher par nom">
-  <button (click)="search()">Search</button>
-
-  <button (click)="sortAssignmentsByMatiere()">Trier par matière</button>
-  <button (click)="sortAssignmentsByNote()">Trier par note</button>
-  <button (click)="sortAssignmentsByDateDeRendu()">Trier par date de rendu</button>
+  <div class="button-container">
+    <button mat-raised-button color="accent" (click)="sortAssignmentsByMatiere()">Trier par matière</button>
+    <button mat-raised-button color="accent" (click)="sortAssignmentsByNote()">Trier par note</button>
+    <button mat-raised-button color="accent" (click)="sortAssignmentsByDateDeRendu()">Trier par date de rendu</button>
+  </div>
 
   <table mat-table [dataSource]="filteredAssignments" class="devoir-list">
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

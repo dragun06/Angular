@@ -62,6 +62,22 @@ table td:first-child {
   text-align: left;
 }
 
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.add-assignment {
+  display: flex;
+  align-items: center;
+}
+
+.error-message {
+  color: red;
+  margin-left: 10px;
+}
+
 .paginator-buttons {
   display: flex;
   justify-content: space-between;
