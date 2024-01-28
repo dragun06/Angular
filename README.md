@@ -27,6 +27,7 @@ Login: test, Password: test, Role, User Login: admin, Password: admin, Role, Adm
 - Faire la pagination
 - Quand login, mettre un bouton de deconnexion a la place
 - aller sur la 1ere et derniere page (permet de voir les assignments ajoutés)
+- ajouter, edit assignment
 
 
 # Valeurs ajoutées
@@ -41,4 +42,4 @@ Login: test, Password: test, Role, User Login: admin, Password: admin, Role, Adm
 # A faire :
 - Vu en détail qui montre les remarques, note si rendu, photo prof et matiere
 - Plus jolie
-- réparer  suppression et modification
+- réparer  suppression

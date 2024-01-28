@@ -29,6 +29,7 @@ import { LoginAppComponent } from './assignments/login-app/login-app.component';
 import { HttpClientModule } from '@angular/common/http';
 import {MatTableModule} from "@angular/material/table";
 import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatSnackBarModule} from "@angular/material/snack-bar";
 
 const routes : Routes = [
 {path:'', component:AssignmentsComponent},
@@ -36,6 +37,7 @@ const routes : Routes = [
 {path:'add', component:AddAssignmentComponent},
 {path:'assignment/:id', component:AssignmentDetailComponent},
 {path:'assignment/:id/edit', component:EditAssignmentComponent, canActivate: [AuthGuard]},
+  {path:'assignment/add', component:AddAssignmentComponent, canActivate: [AuthGuard]},
 {path:'login', component:LoginAppComponent}
 ]
 
@@ -53,6 +55,7 @@ const routes : Routes = [
     LoginAppComponent
   ],
     imports: [
+        MatSnackBarModule,
         BrowserModule,
         BrowserAnimationsModule,
         MatButtonModule,

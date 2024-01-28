@@ -40,6 +40,8 @@ function postAssignment(req, res){
     assignment.rendu = req.body.rendu;
     assignment.matiere = req.body.matiere;
     assignment.image = req.body.image;
+    assignment.note = req.body.note;
+    assignment.remarque = req.body.remarque;
 
 
     console.log("POST assignment reçu :");
@@ -58,7 +60,16 @@ function postAssignment(req, res){
 function updateAssignment(req, res) {
     console.log("UPDATE recu assignment : ");
     console.log(req.body);
-    Assignment.findByIdAndUpdate(req.body._id, req.body, {new: true}, (err, assignment) => {
+    Assignment.findByIdAndUpdate(req.body._id, {
+        id: req.body.id,
+        nom: req.body.nom,
+        dateDeRendu: req.body.dateDeRendu,
+        rendu: req.body.rendu,
+        matiere: req.body.matiere,
+        image: req.body.image,
+        note: req.body.note,
+        remarque: req.body.remarque
+    }, {new: true, runValidators: true}, (err, assignment) => {
         if (err) {
             console.log(err);
             res.send(err)

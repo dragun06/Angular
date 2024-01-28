@@ -60,4 +60,13 @@ export class EditAssignmentComponent implements OnInit {
       });
 
     }
+
+  onDeleteAssignment() {
+    if(!this.assignment) return;
+    this.assignmentService.deleteAssignment(this.assignment).subscribe(() => {
+      console.log('Assignment deleted');
+      this.router.navigate(['/home']);
+    });
+  }
+
 }

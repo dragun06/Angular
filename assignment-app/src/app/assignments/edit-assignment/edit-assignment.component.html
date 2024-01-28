@@ -12,7 +12,7 @@
       <input matInput type="number" placeholder="Ajouter une note" [(ngModel)]="note" name="assignment-note">
     </mat-form-field>
     <mat-form-field>
-      <input matInput type="text" placeholder="Ajouter une remarque" [(ngModel)]="remarque" name="assignment-remarque">
+      <input matInput placeholder="Ajouter une remarque" [(ngModel)]="remarque" name="assignment-remarque">
     </mat-form-field>
     <mat-form-field>
       <input matInput placeholder="URL image matière" [(ngModel)]="image" name="assignment-image">
@@ -25,8 +25,10 @@
     <mat-checkbox *ngIf="!assignment.rendu" (click)="assignment.rendu=true">
       Rendu
     </mat-checkbox>
-      <button mat-raised-button color="primary" [disabled]="((!nomAssignment)||(!dateDeRendu))">
+      <button mat-raised-button color="primary">
         Sauvegarder
       </button>
+
     </form>
+  <button mat-raised-button color="warn" (click)="onDeleteAssignment()">Supprimer l'assignment</button>
   </div>

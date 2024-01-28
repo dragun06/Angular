@@ -56,6 +56,8 @@ export class AssignmentsService {
 
   updateAssignment(assignment: Assignment): Observable<any> {
     //return of('assignement modifié')
+    console.log("assignment recu l'update")
+    console.log(assignment)
     return this.http.put<Assignment>(this.url, assignment);
   }
 
