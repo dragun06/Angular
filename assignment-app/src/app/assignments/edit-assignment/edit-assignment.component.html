@@ -8,12 +8,17 @@
     <mat-form-field>
       <input matInput placeholder="Matière" [(ngModel)]="matiere" name="assignment-matiere">
     </mat-form-field>
-    <mat-form-field>
-      <input matInput type="number" placeholder="Ajouter une note" [(ngModel)]="note" name="assignment-note">
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput placeholder="Ajouter une remarque" [(ngModel)]="remarque" name="assignment-remarque">
-    </mat-form-field>
+    <div *ngIf="assignment.rendu">
+      <mat-form-field>
+        <mat-label>Note</mat-label>
+        <input matInput [(ngModel)]="assignment.note" name="note">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Remarque</mat-label>
+        <textarea matInput [(ngModel)]="assignment.remarque" name="remarque"></textarea>
+      </mat-form-field>
+    </div>
     <mat-form-field>
       <input matInput placeholder="URL image matière" [(ngModel)]="image" name="assignment-image">
     </mat-form-field>

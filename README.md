@@ -30,6 +30,7 @@ Login: admin, Password: admin
 - Quand login, mettre un bouton de deconnexion a la place
 - aller sur la 1ere et derniere page (permet de voir les assignments ajoutés)
 - ajouter, edit assignment, supprimer, vue en détail
+- Liste de matiere a choisir pour ajouter un assignment
 
 
 

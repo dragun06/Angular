@@ -14,7 +14,7 @@ import { ButtonsComponent } from './buttons/buttons.component';
 import { RenduDirective } from './shared/rendu.directive';
 import { NonRenduDirective } from './shared/non-rendu.directive';
 import { MatDatepickerModule } from '@angular/material/datepicker';
-import { MatNativeDateModule } from '@angular/material/core';
+import {MatNativeDateModule, MatOptionModule} from '@angular/material/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
@@ -30,6 +30,7 @@ import { HttpClientModule } from '@angular/common/http';
 import {MatTableModule} from "@angular/material/table";
 import {MatPaginatorModule} from "@angular/material/paginator";
 import {MatSnackBarModule} from "@angular/material/snack-bar";
+import {MatSelectModule} from "@angular/material/select";
 
 const routes : Routes = [
 {path:'', component:AssignmentsComponent},
@@ -54,29 +55,31 @@ const routes : Routes = [
     EditAssignmentComponent,
     LoginAppComponent
   ],
-    imports: [
-        MatSnackBarModule,
-        BrowserModule,
-        BrowserAnimationsModule,
-        MatButtonModule,
-        MatIconModule,
-        MatDividerModule,
-        MatCardModule,
-        MatFormFieldModule,
-        MatInputModule,
-        FormsModule,
-        MatDatepickerModule,
-        MatNativeDateModule,
-        MatToolbarModule,
-        MatSidenavModule,
-        MatListModule,
-        MatCheckboxModule,
-        MatSlideToggleModule,
-        HttpClientModule,
-        RouterModule.forRoot(routes),
-        MatTableModule,
-        MatPaginatorModule
-    ],
+  imports: [
+    MatSnackBarModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatIconModule,
+    MatDividerModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule,
+    MatCheckboxModule,
+    MatSlideToggleModule,
+    HttpClientModule,
+    RouterModule.forRoot(routes),
+    MatTableModule,
+    MatPaginatorModule,
+    MatOptionModule,
+    MatSelectModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

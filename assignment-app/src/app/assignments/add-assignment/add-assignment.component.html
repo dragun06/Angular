@@ -25,11 +25,11 @@
 
   <mat-form-field>
     <mat-label>Matiere</mat-label>
-    <input matInput
-           placeholder="Matière"
-           [(ngModel)]="matiere"
-           name="matiere"
-    />
+    <mat-select [(ngModel)]="matiere" name="matiere">
+      <mat-option value="math">Math</mat-option>
+      <mat-option value="angular">Angular</mat-option>
+      <mat-option value="français">Français</mat-option>
+    </mat-select>
   </mat-form-field>
 
   <mat-form-field>
