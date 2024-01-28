@@ -9,7 +9,9 @@ let AssignmentSchema = Schema({
     nom: String,
     rendu: Boolean,
     image: String,
-    matiere: String
+    matiere: String,
+    note: Number,
+    remarque: String
 });
 
 AssignmentSchema.plugin(aggregatePaginate);

@@ -9,12 +9,14 @@ npm i
 
 npm run build
 
+(sur deux terminaux différents)
+
 npm run start 
 
 
 Info Login
 
-Login: test, Password: test, Role, User Login: admin, Password: admin, Role, Admin
+Login: admin, Password: admin
 
 
 # Tâches faites : 
@@ -27,7 +29,8 @@ Login: test, Password: test, Role, User Login: admin, Password: admin, Role, Adm
 - Faire la pagination
 - Quand login, mettre un bouton de deconnexion a la place
 - aller sur la 1ere et derniere page (permet de voir les assignments ajoutés)
-- ajouter, edit assignment
+- ajouter, edit assignment, supprimer, vue en détail
+
 
 
 # Valeurs ajoutées
@@ -37,9 +40,4 @@ Login: test, Password: test, Role, User Login: admin, Password: admin, Role, Adm
 - Pagination à choix (nombre d'assignment par page)
 - Assignment apparaissent en fade in 
 - Mettre la souris sur un assignment ou des boutons change la couleur et fait un effet de zoom
-
-
-# A faire :
-- Vu en détail qui montre les remarques, note si rendu, photo prof et matiere
-- Plus jolie
-- réparer  suppression
+- Notification quand pas admin pour éditer un assignment + message sur ajouter assignment
